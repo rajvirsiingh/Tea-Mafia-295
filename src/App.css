@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family:  'Poppins', sans-serif;
+}
+#logo{
+  width: 128px;
+}
+h1{
+  font-size: 3rem;
+}
+h1, h2, h3{
+  margin: 12px;
+}
+header{
+  height: 70vh;
+  background: url("./assets/restaurant.jpg");
+  color: white ;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+header .header-text{
+  padding: 3rem;
+  background: rgba(0, 0, 0, 0.23);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(20, 11, 11, 0.08);
+}
+.orange{
+  color: #DC3727;
+  font-weight: bold;
+}
+section#about{
+  padding: 24px;
+  text-align: center;
+}
+button{
+ 
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid #DC3727;
+  background: #DC3727;
+}
+button:hover {
+  background: #ffffff00;
+  color: #DC3727;
+}
+
+
+.why-love {
+background: linear-gradient(180deg, #0b0b0b 0%, #141414 100%);
+padding: 80px 20px;
+text-align: center;
+color: #ffffff;
+}
+
+/* Heading */
+.why-love h2 {
+font-size: 40px;
+font-weight: 700;
+margin-bottom: 50px;
+letter-spacing: 1px;
+color: #DC3727;
+text-transform: uppercase;
+position: relative;
+}
+
+/* underline decoration */
+.why-love h2::after {
+content: "";
+width: 90px;
+height: 3px;
+background: #DC3727;
+display: block;
+margin: 14px auto 0;
+border-radius: 5px;
+}
+
+/* container */
+.container {
+max-width: 1100px;
+margin: auto;
+}
+
+/* grid layout */
+.features {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 18px;
+list-style: none;
+padding: 0;
+margin: 0 auto 40px auto;
+}
+
+/* cards */
+.features li {
+background: rgba(255,255,255,0.04);
+border: 1px solid rgba(255,255,255,0.08);
+backdrop-filter: blur(6px);
+padding: 18px 20px;
+border-radius: 12px;
+font-size: 18px;
+text-align: left;
+position: relative;
+transition: all 0.35s ease;
+box-shadow: 0 0 0 rgba(247,201,72,0);
+}
+
+/* check icon */
+.features li::before {
+content: "✔";
+color: #DC3727;
+font-weight: bold;
+margin-right: 10px;
+}
+
+/* hover effect */
+.features li:hover {
+transform: translateY(-6px) scale(1.02);
+border-color: #DC3727;
+box-shadow: 0 10px 25px rgba(247,201,72,0.25);
+background: rgba(247,201,72,0.08);
+}
+
+/* closing line */
+.closing-text {
+font-size: 22px;
+color: #e5e5e5;
+max-width: 750px;
+margin: auto;
+line-height: 1.7;
+font-style: italic;
+position: relative;
+}
+
+/* quote decoration */
+.closing-text::before {
+content: "“";
+font-size: 50px;
+color: #DC3727;
+position: absolute;
+left: -20px;
+top: -10px;
+opacity: 0.6;
+}
+button a{
+ text-decoration: none;
+ color: #fff;
+}
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+header{
+  height: auto;
+}
+
+.why-love {
+    padding: 60px 15px;
+}
+
+.why-love h2 {
+    font-size: 28px;
+}
+
+.features {
+    grid-template-columns: 1fr;
+}
+
+.features li {
+    font-size: 16px;
+    padding: 16px;
+}
+
+.closing-text {
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+
+}
+
+
+.visit-us {
+background: #121212;
+padding: 80px 20px;
+color: #ffffff;
+}
+
+.visit-container {
+max-width: 1150px;
+margin: auto;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 40px;
+align-items: center;
+}
+
+/* text side */
+.visit-text h2 {
+font-size: 36px;
+color: #DC3727;
+margin-bottom: 20px;
+}
+
+.visit-text p {
+font-size: 18px;
+line-height: 1.7;
+color: #e2e2e2;
+margin-bottom: 20px;
+}
+
+.visit-text h3 {
+margin-top: 20px;
+margin-bottom: 12px;
+font-size: 22px;
+color: #ffffff;
+}
+
+/* search keyword list */
+.search-list {
+list-style: none;
+padding: 0;
+margin: 0 0 25px 0;
+}
+
+.search-list li {
+padding: 10px 0 10px 30px;
+position: relative;
+font-size: 17px;
+border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.search-list li::before {
+content: "📍";
+position: absolute;
+left: 0;
+}
+
+/* highlight line */
+.highlight {
+font-size: 20px;
+font-weight: 600;
+color: #DC3727;
+}
+
+/* map styling */
+.visit-map iframe {
+border-radius: 12px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* mobile responsive */
+@media (max-width: 900px) {
+.visit-container {
+grid-template-columns: 1fr;
+}
+
+.visit-text h2 {
+    font-size: 28px;
+}
+
+.visit-text p {
+    font-size: 16px;
+}
+
+}
+/* Teamafia295 Google Map Section */
+
+.embed-map-fixed {
+width: 100%;
+padding: 60px 20px;
+background: #111;
+display: flex;
+justify-content: center;
+}
+
+.embed-map-container {
+width: 100%;
+max-width: 1100px;
+height: 420px;
+border-radius: 16px;
+overflow: hidden;
+box-shadow: 0 18px 40px rgba(0,0,0,0.6);
+border: 2px solid rgba(247,201,72,0.25);
+}
+
+/* actual map */
+.embed-map-frame {
+width: 100%;
+height: 100%;
+border: 0;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+.embed-map-container {
+height: 320px;
+}
+}
+
+       
