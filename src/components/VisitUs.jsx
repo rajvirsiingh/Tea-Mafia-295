@@ -24,7 +24,7 @@ const VisitUs = () => {
         </ul>
 
         <p class="highlight">
-            Teamafia295 is the perfect destination for you.
+            Tea Mafia 295 is the perfect destination for you.
         </p>
     </div>
 
